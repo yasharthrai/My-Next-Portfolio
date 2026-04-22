@@ -1,0 +1,27 @@
+{
+  "name": "my-next-portfolio",
+  "version": "1.0.0",
+  "description": "Minimal and quirky portfolio of Yasharth Rai",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": ["portfolio", "nextjs", "product-manager"],
+  "author": "Yasharth Rai",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^16.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "^14.0.3"
+  }
+}

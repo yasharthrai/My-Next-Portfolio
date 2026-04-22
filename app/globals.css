@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=EB+Garamond:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #0a0e27;
+  color: #e0e0e0;
+  font-family: 'IBM Plex Mono', monospace;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Quirky elements */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 10px rgba(124, 58, 237, 0.5); }
+  50% { text-shadow: 0 0 20px rgba(124, 58, 237, 1); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.glow-text {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.minimal-border {
+  border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+.minimal-border-hover {
+  border: 1px solid rgba(124, 58, 237, 0.5);
+  transition: all 0.3s ease;
+}
+
+.minimal-border-hover:hover {
+  border-color: rgba(124, 58, 237, 1);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
+}
+
+a {
+  color: #a78bfa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #c4b5fd;
+}
+
+/* Quirky mountain divider */
+.mountain-divider {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(180deg, rgba(124, 58, 237, 0.1) 0%, transparent 100%);
+  clip-path: polygon(0 50%, 10% 40%, 20% 60%, 30% 35%, 40% 50%, 50% 30%, 60% 45%, 70% 35%, 80% 50%, 90% 40%, 100% 55%, 100% 100%, 0 100%);
+}
+
+/* Smooth transitions */
+button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
