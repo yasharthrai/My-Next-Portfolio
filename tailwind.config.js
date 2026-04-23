@@ -9,8 +9,8 @@ module.exports = {
       colors: {
         'dark': '#0a0e27',
         'darker': '#050811',
-        'accent': '#7c3aed',
-        'accent-light': '#a78bfa',
+        'accent': '#ff0000',
+        'accent-light': '#ffffff',
       },
       fontFamily: {
         'mono': ['IBM Plex Mono', 'monospace'],
