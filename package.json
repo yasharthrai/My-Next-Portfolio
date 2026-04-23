@@ -2,13 +2,15 @@
   "name": "my-next-portfolio",
   "version": "1.0.0",
   "description": "Minimal and quirky portfolio of Yasharth Rai",
+  "engines": {
+    "node": ">=18.17.0"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "next build && gh-pages -d out"
+    "lint": "next lint"
   },
   "keywords": ["portfolio", "nextjs", "product-manager"],
   "author": "Yasharth Rai",
