@@ -1,16 +1,17 @@
 const Experience = () => {
   const experiences = [
     {
-      title: 'Junior Project Manager (Tech)',
-      company: 'ByOpeTech',
+      title: 'Junior Product Manager',
+      company: 'BuildPiper',
       period: 'Current',
       location: 'Uttar Pradesh, India',
       type: 'Full-time',
       achievements: [
-        'Leading product initiatives across tech ecosystem with focus on user adoption',
-        'Driving 15%+ growth in feature adoption through data-driven enhancements',
-        'Managing cross-functional teams of 7+ analysts for strategic projects',
-        'Implementing agile methodologies for faster product iteration',
+        'Driving product strategy for fintech platform serving 50K+ users across payment solutions',
+        'Achieved 25%+ growth in monthly active users through data-driven feature releases',
+        'Leading cross-functional team of 8+ stakeholders (Design, Engineering, Analytics)',
+        'Reduced feature time-to-market by 40% through agile sprint optimization',
+        'Built automated analytics dashboards capturing 15+ KPIs with real-time insights',
       ],
     },
     {
@@ -46,22 +47,22 @@ const Experience = () => {
     <section id="experience" className="min-h-screen flex items-center py-20 px-6 border-t border-accent/20">
       <div className="max-w-4xl mx-auto w-full">
         <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            <span className="text-accent">/</span> experience
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 hover:glow-text cursor-pointer">
+            <span className="text-accent inline-block hover:spin-slow">/</span> experience
           </h2>
-          <div className="mountain-divider"></div>
+          <div className="mountain-divider hover:animate-pulse"></div>
         </div>
 
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <div 
               key={index}
-              className="p-6 border border-accent/30 rounded hover:border-accent/60 transition-all minimal-border-hover"
+              className="p-6 border border-accent/30 rounded hover:border-accent/80 transition-all minimal-border-hover hover:bg-accent/5 hover:shadow-lg hover:scale-[1.02] cursor-pointer group"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-accent-light">{exp.title}</h3>
-                  <p className="text-accent">{exp.company}</p>
+                <div className="group-hover:translate-x-2 transition-transform duration-300">
+                  <h3 className="text-2xl font-bold text-accent-light group-hover:text-accent transition-colors">{exp.title}</h3>
+                  <p className="text-accent font-bold group-hover:pulse-red">{exp.company}</p>
                 </div>
                 <div className="text-right text-sm text-gray-400">
                   <p>{exp.period}</p>
@@ -73,8 +74,8 @@ const Experience = () => {
 
               <ul className="space-y-2">
                 {exp.achievements.map((achievement, i) => (
-                  <li key={i} className="text-gray-300 flex gap-3">
-                    <span className="text-accent-light flex-shrink-0">→</span>
+                  <li key={i} className="text-gray-300 flex gap-3 group/item hover:text-white transition-colors" style={{ transitionDelay: `${i * 50}ms` }}>
+                    <span className="text-accent flex-shrink-0 group-hover/item:animate-bounce">→</span>
                     <span>{achievement}</span>
                   </li>
                 ))}
@@ -83,10 +84,10 @@ const Experience = () => {
           ))}
         </div>
 
-        <div className="mt-16 p-6 bg-accent/5 border border-accent/20 rounded">
-          <h3 className="text-lg font-bold text-accent mb-4">education</h3>
-          <div>
-            <p className="text-accent-light font-semibold">B.S. in Mathematics</p>
+        <div className="mt-16 p-6 bg-accent/5 border border-accent/20 rounded hover:bg-accent/10 hover:border-accent/50 transition-all hover:shadow-lg hover:scale-[1.02] cursor-pointer group">
+          <h3 className="text-lg font-bold text-accent mb-4 group-hover:pulse-red">education</h3>
+          <div className="group-hover:translate-x-2 transition-transform duration-300">
+            <p className="text-accent-light font-semibold group-hover:text-white transition-colors">B.S. in Mathematics</p>
             <p className="text-gray-400">Veer Bahadur Singh Purvanchal University, Jaunpur</p>
             <p className="text-sm text-gray-500">August 2018 - September 2021</p>
           </div>

@@ -24,8 +24,8 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <p className="text-gray-300 leading-relaxed">
-              I&rsquo;m a <span className="text-accent-light">Junior Project Manager</span> at ByOpeTech with a passion for turning complex data into clear, actionable product insights.
+            <p className="text-gray-300 leading-relaxed hover:text-white transition-colors duration-300">
+              I&rsquo;m a <span className="text-accent-light font-bold">Junior Product Manager</span> at <span className="text-accent font-bold hover:pulse-red cursor-pointer">BuildPiper</span>, where I drive product strategy and user adoption across fintech solutions. Passionate about turning complex data into clear, actionable product insights.
             </p>
             
             <p className="text-gray-300 leading-relaxed">
