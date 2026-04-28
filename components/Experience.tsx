@@ -1,3 +1,5 @@
+import DancingPerson from './DancingPerson'
+
 const Experience = () => {
   const experiences = [
     {
@@ -44,7 +46,11 @@ const Experience = () => {
   ]
 
   return (
-    <section id="experience" className="min-h-screen flex items-center py-20 px-6 border-t border-accent/20">
+    <section id="experience" className="min-h-screen flex items-center py-20 px-6 border-t border-red-300 relative">
+      <div className="hidden md:block">
+        <DancingPerson position="top-left" size="sm" delay={300} />
+        <DancingPerson position="bottom-right" size="sm" delay={600} />
+      </div>
       <div className="max-w-4xl mx-auto w-full">
         <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 hover:glow-text cursor-pointer">
