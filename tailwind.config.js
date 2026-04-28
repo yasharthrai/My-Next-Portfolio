@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dark': '#0a0e27',
-        'darker': '#050811',
-        'accent': '#ff0000',
-        'accent-light': '#ffffff',
+        'dark': '#ffffff',
+        'darker': '#f5f5f5',
+        'accent': '#dc2626',
+        'accent-light': '#ef4444',
       },
       fontFamily: {
         'mono': ['IBM Plex Mono', 'monospace'],

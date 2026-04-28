@@ -64,7 +64,7 @@ const Experience = () => {
                   <h3 className="text-2xl font-bold text-accent-light group-hover:text-accent transition-colors">{exp.title}</h3>
                   <p className="text-accent font-bold group-hover:pulse-red">{exp.company}</p>
                 </div>
-                <div className="text-right text-sm text-gray-400">
+                <div className="text-right text-sm text-gray-700">
                   <p>{exp.period}</p>
                   <p>{exp.type}</p>
                 </div>

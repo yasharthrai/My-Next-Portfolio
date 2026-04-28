@@ -11,8 +11,8 @@
 }
 
 html, body {
-  background-color: #0a0e27;
-  color: #e0e0e0;
+  background-color: #ffffff;
+  color: #000000;
   font-family: 'IBM Plex Mono', monospace;
   overflow-x: hidden;
 }
@@ -82,20 +82,20 @@ html {
 }
 
 a {
-  color: #a78bfa;
+  color: #dc2626;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #c4b5fd;
+  color: #b91c1c;
 }
 
 /* Quirky mountain divider */
 .mountain-divider {
   width: 100%;
   height: 100px;
-  background: linear-gradient(180deg, rgba(255, 0, 0, 0.1) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(220, 38, 38, 0.1) 0%, transparent 100%);
   clip-path: polygon(0 50%, 10% 40%, 20% 60%, 30% 35%, 40% 50%, 50% 30%, 60% 45%, 70% 35%, 80% 50%, 90% 40%, 100% 55%, 100% 100%, 0 100%);
 }
 

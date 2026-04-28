@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="fixed top-0 w-full bg-dark/80 backdrop-blur-md border-b border-accent/20 z-50">
+    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-red-300 z-50">
       <nav className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="text-lg font-bold text-accent-light group cursor-pointer">
           <span className="text-accent group-hover:spin-slow inline-block">/</span> yasharth

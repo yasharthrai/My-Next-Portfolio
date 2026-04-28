@@ -65,7 +65,7 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-accent-light hover:text-accent transition-colors text-sm font-semibold"
+                  className="inline-block text-red-600 hover:text-red-800 transition-colors text-sm font-semibold"
                 >
                   view project →
                 </a>

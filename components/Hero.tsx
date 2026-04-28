@@ -11,9 +11,9 @@ const Hero = () => {
           </div>
         </div>
         
-        <p className="text-lg text-gray-400 mb-12 leading-relaxed max-w-2xl mx-auto">
+        <p className="text-lg text-gray-800 mb-12 leading-relaxed max-w-2xl mx-auto">
           I transform complex data into clear product insights. 
-          <span className="text-accent font-bold"> Passionate about understanding user behavior </span>
+          <span className="text-red-700"> Passionate about understanding user behavior </span>
           and building products that matter.
         </p>
 
