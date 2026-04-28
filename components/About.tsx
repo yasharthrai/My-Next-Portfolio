@@ -24,16 +24,16 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <p className="text-gray-300 leading-relaxed hover:text-white transition-colors duration-300">
+            <p className="text-black leading-relaxed hover:text-red-700 transition-colors duration-300">
               I&rsquo;m a <span className="text-accent-light font-bold">Junior Product Manager</span> at <span className="text-accent font-bold hover:pulse-red cursor-pointer">BuildPiper</span>, where I drive product strategy and user adoption across fintech solutions. Passionate about turning complex data into clear, actionable product insights.
             </p>
             
-            <p className="text-gray-900 leading-relaxed">
+            <p className="text-black leading-relaxed">
               With experience at <span className="text-red-700 font-semibold">Google</span> and <span className="text-red-700 font-semibold">Amazon</span>, 
               I&rsquo;ve led cross-functional teams, built product dashboards, and driven measurable impact through data-driven decision making.
             </p>
 
-            <p className="text-gray-900 leading-relaxed">
+            <p className="text-black leading-relaxed">
               When I&rsquo;m not analyzing data, you&rsquo;ll find me on mountain trails exploring peaceful solitude, 
               or deep in the latest product strategy case study.
             </p>
@@ -68,7 +68,7 @@ const About = () => {
 
             <div className="mt-12">
               <h3 className="text-lg font-bold text-red-600 mb-4">certifications</h3>
-              <ul className="space-y-3 text-sm text-gray-800">
+              <ul className="space-y-3 text-sm text-black">
                 <li>✓ Aha! Product Management Professional</li>
                 <li>✓ Product Management Strategy - Brent Institute</li>
                 <li>✓ Agile Methodologies & Market Research</li>

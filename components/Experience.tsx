@@ -64,17 +64,17 @@ const Experience = () => {
                   <h3 className="text-2xl font-bold text-accent-light group-hover:text-accent transition-colors">{exp.title}</h3>
                   <p className="text-accent font-bold group-hover:pulse-red">{exp.company}</p>
                 </div>
-                <div className="text-right text-sm text-gray-700">
+                <div className="text-right text-sm text-black">
                   <p>{exp.period}</p>
                   <p>{exp.type}</p>
                 </div>
               </div>
               
-              <p className="text-gray-400 text-sm mb-4">{exp.location}</p>
+              <p className="text-black text-sm mb-4">{exp.location}</p>
 
               <ul className="space-y-2">
                 {exp.achievements.map((achievement, i) => (
-                  <li key={i} className="text-gray-300 flex gap-3 group/item hover:text-white transition-colors" style={{ transitionDelay: `${i * 50}ms` }}>
+                  <li key={i} className="text-black flex gap-3 group/item hover:text-red-700 transition-colors" style={{ transitionDelay: `${i * 50}ms` }}>
                     <span className="text-accent flex-shrink-0 group-hover/item:animate-bounce">→</span>
                     <span>{achievement}</span>
                   </li>
@@ -88,8 +88,8 @@ const Experience = () => {
           <h3 className="text-lg font-bold text-accent mb-4 group-hover:pulse-red">education</h3>
           <div className="group-hover:translate-x-2 transition-transform duration-300">
             <p className="text-accent-light font-semibold group-hover:text-white transition-colors">B.S. in Mathematics</p>
-            <p className="text-gray-400">Veer Bahadur Singh Purvanchal University, Jaunpur</p>
-            <p className="text-sm text-gray-500">August 2018 - September 2021</p>
+            <p className="text-black">Veer Bahadur Singh Purvanchal University, Jaunpur</p>
+            <p className="text-sm text-black">August 2018 - September 2021</p>
           </div>
         </div>
       </div>

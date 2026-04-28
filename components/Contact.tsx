@@ -9,7 +9,7 @@ const Contact = () => {
           <div className="mountain-divider mx-auto max-w-md hover:animate-pulse"></div>
         </div>
 
-        <p className="text-xl text-gray-900 mb-12 max-w-2xl mx-auto">
+        <p className="text-xl text-black mb-12 max-w-2xl mx-auto">
           Interested in collaborating on product initiatives, data insights, or just want to chat about mountains and data?
         </p>
 
@@ -26,7 +26,7 @@ const Contact = () => {
           
           <p className="text-lg text-black">
             <span className="text-red-600 font-semibold">Location: </span>
-            <span className="text-gray-900">Noida, Uttar Pradesh, India</span>
+            <span className="text-black">Noida, Uttar Pradesh, India</span>
           </p>
         </div>
 
@@ -58,7 +58,7 @@ const Contact = () => {
         </div>
 
         <div className="p-8 bg-red-50 border border-red-300 rounded max-w-md mx-auto hover:border-red-600 hover:bg-red-100 transition-all duration-300">
-          <p className="text-sm text-gray-900 mb-4">
+          <p className="text-sm text-black mb-4">
             Fun fact: I believe the best ideas come after a peaceful mountain bike ride with no distractions. 
             <span className="text-red-700 font-bold"> Let&rsquo;s brainstorm over coffee or a virtual call!</span>
           </p>

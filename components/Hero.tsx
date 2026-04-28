@@ -11,7 +11,7 @@ const Hero = () => {
           </div>
         </div>
         
-        <p className="text-lg text-gray-800 mb-12 leading-relaxed max-w-2xl mx-auto">
+        <p className="text-lg text-black mb-12 leading-relaxed max-w-2xl mx-auto">
           I transform complex data into clear product insights. 
           <span className="text-red-700"> Passionate about understanding user behavior </span>
           and building products that matter.
@@ -26,7 +26,7 @@ const Hero = () => {
           </button>
         </div>
 
-        <div className="text-sm text-gray-500 space-y-2 hover:pulse-red p-4 rounded transition-all duration-300 cursor-pointer">
+        <div className="text-sm text-black space-y-2 hover:pulse-red p-4 rounded transition-all duration-300 cursor-pointer">
           <p>🚴 mountain biking enthusiast</p>
           <p>🧘 lover of solitude & peaceful moments</p>
           <p>📊 data → insights → impact</p>
