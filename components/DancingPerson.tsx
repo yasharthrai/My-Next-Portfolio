@@ -12,9 +12,9 @@ const DancingPerson: React.FC<DancingPersonProps> = ({
   size = 'md'
 }) => {
   const sizeMap = {
-    sm: 'w-12 h-12',
-    md: 'w-20 h-20',
-    lg: 'w-32 h-32',
+    sm: 'w-36 h-36',
+    md: 'w-60 h-60',
+    lg: 'w-96 h-96',
   }
 
   const positionMap = {
@@ -45,7 +45,7 @@ const DancingPerson: React.FC<DancingPersonProps> = ({
         {/* Body */}
         <line x1="50" y1="28" x2="50" y2="50" />
         
-        {/* Left Arm */}
+        {/* Left Arm */}node -v/
         <line 
           x1="50" 
           y1="35" 
