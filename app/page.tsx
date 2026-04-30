@@ -6,8 +6,10 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Stats from '@/components/Stats'
 import Skills from '@/components/Skills'
+import Timeline from '@/components/Timeline'
 import Experience from '@/components/Experience'
 import CaseStudies from '@/components/CaseStudies'
+import Blog from '@/components/Blog'
 import Projects from '@/components/Projects'
 import Testimonials from '@/components/Testimonials'
 import Certifications from '@/components/Certifications'
@@ -57,8 +59,10 @@ export default function Home() {
       <About />
       <Stats />
       <Skills />
+      <Timeline />
       <Experience />
       <CaseStudies />
+      <Blog />
       <Projects />
       <Testimonials />
       <Certifications />

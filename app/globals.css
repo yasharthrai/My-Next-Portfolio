@@ -15,6 +15,7 @@ html, body {
   color: #ffffff;
   font-family: 'IBM Plex Mono', monospace;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html {
@@ -189,4 +190,75 @@ button:hover {
 
 .scroll-reveal-scale.is-visible {
   animation: scaleIn 0.8s ease-out forwards;
+}
+
+/* Light theme support */
+html.light {
+  color-scheme: light;
+}
+
+html.light body {
+  background-color: #ffffff;
+  color: #0a0e27;
+}
+
+html.light a {
+  color: #dc2626;
+}
+
+html.light a:hover {
+  color: #991b1b;
+}
+
+html.light .border-red-300 {
+  border-color: #fca5a5;
+}
+
+html.light .bg-red-950,
+html.light .bg-red-950\/30,
+html.light .bg-red-950\/50 {
+  background-color: #fff7ed;
+}
+
+html.light .bg-red-900 {
+  background-color: #fed7aa;
+}
+
+html.light .text-gray-300 {
+  color: #6b7280;
+}
+
+html.light .text-gray-400 {
+  color: #9ca3af;
+}
+
+html.light .text-gray-500 {
+  color: #d1d5db;
+}
+
+html.light .text-accent {
+  color: #dc2626;
+}
+
+/* Enhanced animations */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
+}
+
+/* Better accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
