@@ -11,8 +11,8 @@
 }
 
 html, body {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #0a0e27;
+  color: #ffffff;
   font-family: 'IBM Plex Mono', monospace;
   overflow-x: hidden;
 }
@@ -107,4 +107,86 @@ button {
 
 button:hover {
   transform: translateY(-2px);
+}
+
+/* Scroll animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Intersection observer styles */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.scroll-reveal.is-visible {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.scroll-reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.scroll-reveal-left.is-visible {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.scroll-reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.scroll-reveal-right.is-visible {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+.scroll-reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.scroll-reveal-scale.is-visible {
+  animation: scaleIn 0.8s ease-out forwards;
 }

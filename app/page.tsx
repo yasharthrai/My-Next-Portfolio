@@ -4,10 +4,17 @@ import { useState, useEffect } from 'react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
+import Stats from '@/components/Stats'
+import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
+import CaseStudies from '@/components/CaseStudies'
 import Projects from '@/components/Projects'
+import Testimonials from '@/components/Testimonials'
+import Certifications from '@/components/Certifications'
+import Newsletter from '@/components/Newsletter'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import ScrollToTop from '@/components/ScrollToTop'
 
 export default function Home() {
   const [easterEggActive, setEasterEggActive] = useState(false)
@@ -48,10 +55,17 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Stats />
+      <Skills />
       <Experience />
+      <CaseStudies />
       <Projects />
+      <Testimonials />
+      <Certifications />
+      <Newsletter />
       <Contact />
       <Footer />
+      <ScrollToTop />
       
       {/* Hidden easter egg trigger */}
       <div className="hidden">
