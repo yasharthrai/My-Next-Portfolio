@@ -17,8 +17,8 @@ const About = () => {
   return (
     <section id="about" className="min-h-screen flex items-center py-20 px-6 border-t border-red-300 relative">
       <div className="hidden md:block">
-        <DancingPerson position="top-right" size="sm" delay={100} />
-        <DancingPerson position="bottom-left" size="sm" delay={500} />
+        <DancingPerson position="top-right" size="lg" delay={100} />
+        <DancingPerson position="bottom-left" size="lg" delay={500} />
       </div>
       <div className="max-w-4xl mx-auto w-full">
         <div className="mb-12">

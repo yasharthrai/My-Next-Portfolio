@@ -5,9 +5,9 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center px-6 pt-20 relative">
       {/* Floating dancers */}
       <div className="hidden md:block">
-        <DancingPerson position="top-left" size="sm" delay={0} />
-        <DancingPerson position="top-right" size="sm" delay={400} />
-        <DancingPerson position="bottom-left" size="sm" delay={200} />
+        <DancingPerson position="top-left" size="lg" delay={0} />
+        <DancingPerson position="top-right" size="lg" delay={400} />
+        <DancingPerson position="bottom-left" size="lg" delay={200} />
       </div>
       <div className="text-center max-w-3xl">
         <div className="mb-8 float-animation">
