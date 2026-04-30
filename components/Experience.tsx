@@ -48,8 +48,8 @@ const Experience = () => {
   return (
     <section id="experience" className="min-h-screen flex items-center py-20 px-6 border-t border-red-300 relative">
       <div className="hidden md:block">
-        <DancingPerson position="top-left" size="lg" delay={300} />
-        <DancingPerson position="bottom-right" size="lg" delay={600} />
+        <DancingPerson position="top-left" size="md" delay={300} />
+        <DancingPerson position="bottom-right" size="md" delay={600} />
       </div>
       <div className="max-w-4xl mx-auto w-full">
         <div className="mb-12">
