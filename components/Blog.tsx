@@ -10,7 +10,7 @@ const Blog = () => {
     },
     {
       title: 'Fraud Detection: Beyond the Algorithm',
-      excerpt: 'Building ML models is one thing; deploying them responsibly is another. Here's what I learned investigating 1000+ fraud cases.',
+      excerpt: 'Building ML models is one thing; deploying them responsibly is another. Learn what I discovered investigating 1000+ fraud cases.',
       date: 'Feb 28, 2026',
       readTime: '6 min read',
       category: 'Risk & Security',
