@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Header from '@/components/Header'
+import AnimatedBackground from '@/components/AnimatedBackground'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Stats from '@/components/Stats'
@@ -11,6 +12,7 @@ import Experience from '@/components/Experience'
 import CaseStudies from '@/components/CaseStudies'
 import Blog from '@/components/Blog'
 import Projects from '@/components/Projects'
+import GitHubProjects from '@/components/GitHubProjects'
 import Testimonials from '@/components/Testimonials'
 import Certifications from '@/components/Certifications'
 import Newsletter from '@/components/Newsletter'
@@ -44,7 +46,8 @@ export default function Home() {
   }, [keySequence])
 
   return (
-    <main className="w-full">
+    <main className="w-full relative">
+      <AnimatedBackground />
       {easterEggActive && (
         <div className="fixed inset-0 pointer-events-none z-40 flex items-center justify-center">
           <div className="text-6xl font-bold text-accent animate-spin spin-slow">
@@ -64,6 +67,7 @@ export default function Home() {
       <CaseStudies />
       <Blog />
       <Projects />
+      <GitHubProjects />
       <Testimonials />
       <Certifications />
       <Newsletter />

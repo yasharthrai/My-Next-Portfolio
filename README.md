@@ -5,10 +5,19 @@ A minimal and quirky portfolio website built with Next.js, featuring a product m
 ## 🌟 Features
 
 - **Minimal & Quirky Aesthetic**: Dark theme with purple accents, smooth animations, and mountain-inspired elements
-- **Fully Responsive**: Mobile-friendly design that works across all devices
+- **Dark/Light Mode**: Seamless theme switching with localStorage persistence
+- **Fully Responsive**: Mobile-friendly design with hamburger menu for navigation
 - **Fast Performance**: Built with Next.js 16 and optimized for speed
 - **TypeScript**: Type-safe code for better development experience
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development
+- **Command Palette**: CMD+K shortcuts for quick navigation
+- **Blog Section**: Share insights and articles
+- **Timeline Visualization**: Interactive career progression timeline
+- **Scroll Animations**: Smooth reveal animations as you scroll
+- **GitHub Integration**: Display pinned projects from GitHub
+- **SEO Optimized**: Meta tags, Open Graph, sitemap, and robots.txt
+- **Accessibility**: ARIA labels, reduced motion support, keyboard navigation
+- **Analytics Ready**: Google Analytics setup
 
 ## 🚀 Live Site
 
@@ -17,10 +26,19 @@ Visit: [https://my-next-portfolio.vercel.app](https://my-next-portfolio.vercel.a
 ## 📋 Sections
 
 - **Hero**: Eye-catching introduction with call-to-action
-- **About**: Professional bio, skills, and certifications
+- **About**: Professional bio and overview
+- **Stats**: Impact metrics and achievements
+- **Skills**: Interactive proficiency bars by category
+- **Timeline**: Career progression visualization
 - **Experience**: Detailed work history with achievements
-- **Projects**: Portfolio of notable projects and case studies
-- **Contact**: Multiple Ways to get in touch
+- **Case Studies**: Deep dives into major projects with metrics
+- **Blog**: Articles and insights on product management
+- **Projects**: Portfolio of notable projects
+- **GitHub Projects**: Live feed of GitHub repositories
+- **Testimonials**: Social proof from colleagues
+- **Certifications**: Professional credentials and awards
+- **Newsletter**: Email subscription
+- **Contact**: Multiple ways to get in touch
 - **Footer**: Credits and inspirational quote
 
 ## 🛠️ Tech Stack

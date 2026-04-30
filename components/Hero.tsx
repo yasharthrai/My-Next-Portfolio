@@ -19,22 +19,22 @@ const Hero = () => {
           </div>
         </div>
         
-        <p className="text-lg text-black mb-12 leading-relaxed max-w-2xl mx-auto">
+        <p className="text-lg text-gray-300 mb-12 leading-relaxed max-w-2xl mx-auto">
           I transform complex data into clear product insights. 
-          <span className="text-red-700"> Passionate about understanding user behavior </span>
+          <span className="text-accent font-bold"> Passionate about understanding user behavior </span>
           and building products that matter.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <button className="px-8 py-3 border border-accent text-accent hover:bg-accent hover:text-dark transition-all hover:scale-105 hover:shadow-lg">
+          <button className="px-8 py-3 border border-accent text-accent hover:bg-accent hover:text-red-950 transition-all hover:scale-105 hover:shadow-lg hover:shadow-accent/50">
             <a href="#contact">get in touch</a>
           </button>
-          <button className="px-8 py-3 border border-accent-light text-accent-light hover:bg-accent-light hover:text-dark transition-all hover:scale-105 hover:shadow-lg">
+          <button className="px-8 py-3 border border-gray-400 text-gray-300 hover:border-accent hover:text-accent transition-all hover:scale-105 hover:shadow-lg">
             <a href="#projects">view work</a>
           </button>
         </div>
 
-        <div className="text-sm text-black space-y-2 hover:pulse-red p-4 rounded transition-all duration-300 cursor-pointer">
+        <div className="text-sm text-gray-300 space-y-2 hover:pulse-red p-4 rounded transition-all duration-300 cursor-pointer">
           <p>🚴 mountain biking enthusiast</p>
           <p>🧘 lover of solitude & peaceful moments</p>
           <p>📊 data → insights → impact</p>
