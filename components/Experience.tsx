@@ -46,42 +46,42 @@ const Experience = () => {
   ]
 
   return (
-    <section id="experience" className="min-h-screen flex items-center py-20 px-6 border-t border-red-300 relative">
+    <section id="experience" className="min-h-screen flex items-center py-20 px-6 border-t border-border relative">
       <div className="hidden md:block">
         <DancingPerson position="top-left" size="md" delay={300} />
         <DancingPerson position="bottom-right" size="md" delay={600} />
       </div>
       <div className="max-w-4xl mx-auto w-full">
         <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 hover:glow-text cursor-pointer">
-            <span className="text-accent inline-block hover:spin-slow">/</span> experience
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-text-primary cursor-pointer">
+            <span className="text-accent inline-block">/</span> experience
           </h2>
-          <div className="mountain-divider hover:animate-pulse"></div>
+          <div className="elegant-divider"></div>
         </div>
 
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <div 
               key={index}
-              className="p-6 border border-accent/30 rounded hover:border-accent/80 transition-all minimal-border-hover hover:bg-accent/5 hover:shadow-lg hover:scale-[1.02] cursor-pointer group"
+              className="p-6 border border-border rounded-md hover:border-accent transition-all minimal-border hover:shadow-lg cursor-pointer group hover:bg-primary-light"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                 <div className="group-hover:translate-x-2 transition-transform duration-300">
-                  <h3 className="text-2xl font-bold text-accent-light group-hover:text-accent transition-colors">{exp.title}</h3>
-                  <p className="text-accent font-bold group-hover:pulse-red">{exp.company}</p>
+                  <h3 className="text-2xl font-bold text-accent group-hover:text-accent-light transition-colors">{exp.title}</h3>
+                  <p className="text-accent-light font-semibold">{exp.company}</p>
                 </div>
-                <div className="text-right text-sm text-black">
+                <div className="text-right text-sm text-text-secondary">
                   <p>{exp.period}</p>
                   <p>{exp.type}</p>
                 </div>
               </div>
               
-              <p className="text-black text-sm mb-4">{exp.location}</p>
+              <p className="text-text-secondary text-sm mb-4">{exp.location}</p>
 
               <ul className="space-y-2">
                 {exp.achievements.map((achievement, i) => (
-                  <li key={i} className="text-black flex gap-3 group/item hover:text-red-700 transition-colors" style={{ transitionDelay: `${i * 50}ms` }}>
-                    <span className="text-accent flex-shrink-0 group-hover/item:animate-bounce">→</span>
+                  <li key={i} className="text-text-secondary flex gap-3 group/item hover:text-text-primary transition-colors" style={{ transitionDelay: `${i * 50}ms` }}>
+                    <span className="text-accent flex-shrink-0">→</span>
                     <span>{achievement}</span>
                   </li>
                 ))}
@@ -90,12 +90,12 @@ const Experience = () => {
           ))}
         </div>
 
-        <div className="mt-16 p-6 bg-accent/5 border border-accent/20 rounded hover:bg-accent/10 hover:border-accent/50 transition-all hover:shadow-lg hover:scale-[1.02] cursor-pointer group">
-          <h3 className="text-lg font-bold text-accent mb-4 group-hover:pulse-red">education</h3>
+        <div className="mt-16 p-6 bg-primary-light border border-border rounded-md hover:border-accent transition-all hover:shadow-lg cursor-pointer group">
+          <h3 className="text-lg font-bold text-accent mb-4">education</h3>
           <div className="group-hover:translate-x-2 transition-transform duration-300">
-            <p className="text-accent-light font-semibold group-hover:text-white transition-colors">B.S. in Mathematics</p>
-            <p className="text-black">Veer Bahadur Singh Purvanchal University, Jaunpur</p>
-            <p className="text-sm text-black">August 2018 - September 2021</p>
+            <p className="text-accent-light font-semibold group-hover:text-accent-light transition-colors">B.S. in Mathematics</p>
+            <p className="text-text-secondary">Veer Bahadur Singh Purvanchal University, Jaunpur</p>
+            <p className="text-sm text-text-secondary">August 2018 - September 2021</p>
           </div>
         </div>
       </div>

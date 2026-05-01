@@ -9,21 +9,21 @@ const Stats = () => {
   ]
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-red-950 to-transparent border-t border-red-300">
+    <section className="py-20 px-6 bg-gradient-to-br from-primary-light to-transparent border-t border-border">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-center">
-          <span className="text-accent inline-block hover:spin-slow">/</span> impact by numbers
+        <h2 className="text-4xl font-bold mb-12 text-center text-text-primary">
+          <span className="text-accent inline-block">/</span> impact by numbers
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="p-6 rounded-lg border border-red-300 hover:border-accent hover:shadow-lg hover:shadow-accent/30 transition-all duration-300 group cursor-pointer"
+              className="p-6 rounded-md border border-border hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 group cursor-pointer hover:bg-primary-light"
             >
-              <div className="text-4xl font-bold text-accent mb-2 group-hover:scale-110 transition-transform">
+              <div className="text-4xl font-bold text-accent mb-2 group-hover:text-accent-light transition-colors">
                 {stat.value}
               </div>
-              <div className="text-gray-400 group-hover:text-gray-300 transition-colors">
+              <div className="text-text-secondary group-hover:text-text-primary transition-colors font-medium">
                 {stat.label}
               </div>
             </div>

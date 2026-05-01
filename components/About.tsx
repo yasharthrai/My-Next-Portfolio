@@ -15,31 +15,31 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className="min-h-screen flex items-center py-20 px-6 border-t border-red-300 relative">
+    <section id="about" className="min-h-screen flex items-center py-20 px-6 border-t border-border relative">
       <div className="hidden md:block">
         <DancingPerson position="top-right" size="md" delay={100} />
         <DancingPerson position="bottom-left" size="md" delay={500} />
       </div>
       <div className="max-w-4xl mx-auto w-full">
         <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 hover:glow-text cursor-pointer">
-            <span className="text-accent inline-block hover:spin-slow">/</span> about
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-text-primary cursor-pointer">
+            <span className="text-accent inline-block">/</span> about
           </h2>
-          <div className="mountain-divider hover:animate-pulse"></div>
+          <div className="elegant-divider"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <p className="text-black leading-relaxed hover:text-red-700 transition-colors duration-300">
-              I&rsquo;m a <span className="text-accent-light font-bold">Junior Product Manager</span> at <span className="text-accent font-bold hover:pulse-red cursor-pointer">BuildPiper</span>, where I drive product strategy and user adoption across fintech solutions. Passionate about turning complex data into clear, actionable product insights.
+            <p className="text-text-secondary leading-relaxed hover:text-text-primary transition-colors duration-300">
+              I&rsquo;m a <span className="text-accent-light font-medium">Junior Product Manager</span> at <span className="text-accent font-medium cursor-pointer">BuildPiper</span>, where I drive product strategy and user adoption across fintech solutions. Passionate about turning complex data into clear, actionable product insights.
             </p>
             
-            <p className="text-black leading-relaxed">
-              With experience at <span className="text-red-700 font-semibold">Google</span> and <span className="text-red-700 font-semibold">Amazon</span>, 
+            <p className="text-text-secondary leading-relaxed">
+              With experience at <span className="text-accent-light font-medium">Google</span> and <span className="text-accent-light font-medium">Amazon</span>, 
               I&rsquo;ve led cross-functional teams, built product dashboards, and driven measurable impact through data-driven decision making.
             </p>
 
-            <p className="text-black leading-relaxed">
+            <p className="text-text-secondary leading-relaxed">
               When I&rsquo;m not analyzing data, you&rsquo;ll find me on mountain trails exploring peaceful solitude, 
               or deep in the latest product strategy case study.
             </p>
@@ -49,7 +49,7 @@ const About = () => {
                 href="https://www.linkedin.com/in/raiyasharth/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block px-6 py-2 border border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition-all text-sm"
+                className="inline-block px-6 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-all text-sm rounded-md font-medium"
               >
                 connect on linkedin
               </a>
@@ -57,12 +57,12 @@ const About = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold text-red-600 mb-6">core skills</h3>
+            <h3 className="text-lg font-bold text-accent mb-6">core skills</h3>
             <div className="flex flex-wrap gap-3">
               {skills.map((skill, idx) => (
                 <span
                   key={skill}
-                  className="px-4 py-2 text-sm border border-accent/50 text-accent-light minimal-border-hover hover:scale-110 transition-transform duration-300 cursor-pointer"
+                  className="px-4 py-2 text-sm border border-border text-text-secondary hover:border-accent hover:text-accent minimal-border transition-all duration-300 cursor-pointer rounded-md font-medium"
                   style={{
                     transitionDelay: `${idx * 50}ms`
                   }}
@@ -73,8 +73,8 @@ const About = () => {
             </div>
 
             <div className="mt-12">
-              <h3 className="text-lg font-bold text-red-600 mb-4">certifications</h3>
-              <ul className="space-y-3 text-sm text-black">
+              <h3 className="text-lg font-bold text-accent mb-4">certifications</h3>
+              <ul className="space-y-3 text-sm text-text-secondary">
                 <li>✓ Aha! Product Management Professional</li>
                 <li>✓ Product Management Strategy - Brent Institute</li>
                 <li>✓ Agile Methodologies & Market Research</li>

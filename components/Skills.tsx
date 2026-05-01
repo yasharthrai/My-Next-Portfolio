@@ -30,13 +30,13 @@ const Skills = () => {
   ]
 
   return (
-    <section id="skills" className="min-h-screen flex items-center py-20 px-6 border-t border-red-300">
+    <section id="skills" className="min-h-screen flex items-center py-20 px-6 border-t border-border">
       <div className="max-w-5xl mx-auto w-full">
         <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 hover:glow-text cursor-pointer">
-            <span className="text-accent inline-block hover:spin-slow">/</span> skills
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-text-primary cursor-pointer">
+            <span className="text-accent inline-block">/</span> skills
           </h2>
-          <div className="mountain-divider hover:animate-pulse"></div>
+          <div className="elegant-divider"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -46,16 +46,16 @@ const Skills = () => {
               {category.skills.map((skill, skillIdx) => (
                 <div key={skillIdx} className="skill-bar group">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="text-sm font-medium group-hover:text-accent transition-colors">
+                    <span className="text-sm font-medium text-text-secondary group-hover:text-accent transition-colors">
                       {skill.name}
                     </span>
-                    <span className="text-xs text-gray-500 group-hover:text-accent transition-colors">
+                    <span className="text-xs text-text-secondary group-hover:text-accent transition-colors">
                       {skill.proficiency}%
                     </span>
                   </div>
-                  <div className="w-full bg-red-950 rounded-full h-2 overflow-hidden">
+                  <div className="w-full bg-primary-light rounded-full h-2 overflow-hidden">
                     <div
-                      className="bg-gradient-to-r from-accent to-red-500 h-full rounded-full transition-all duration-1000 ease-out skill-progress"
+                      className="bg-gradient-to-r from-accent to-accent-light h-full rounded-full transition-all duration-1000 ease-out skill-progress"
                       style={{
                         width: `${skill.proficiency}%`,
                       }}

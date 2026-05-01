@@ -24,27 +24,27 @@ const Testimonials = () => {
   ]
 
   return (
-    <section id="testimonials" className="py-20 px-6 border-t border-red-300">
+    <section id="testimonials" className="py-20 px-6 border-t border-border">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-          <span className="text-accent inline-block hover:spin-slow">/</span> testimonials
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-text-primary">
+          <span className="text-accent inline-block">/</span> testimonials
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-lg border border-red-300 hover:border-accent hover:shadow-lg hover:shadow-accent/30 transition-all duration-300 group hover:translate-y-2"
+              className="p-6 rounded-md border border-border hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 group hover:bg-primary-light"
             >
               <div className="text-4xl mb-4">{testimonial.avatar}</div>
-              <p className="text-gray-300 mb-4 italic group-hover:text-white transition-colors">
+              <p className="text-text-secondary mb-4 italic group-hover:text-text-primary transition-colors">
                 "{testimonial.text}"
               </p>
-              <div className="border-t border-red-300 pt-4">
-                <p className="font-semibold text-accent group-hover:text-red-300 transition-colors">
+              <div className="border-t border-border pt-4">
+                <p className="font-semibold text-accent group-hover:text-accent-light transition-colors">
                   {testimonial.name}
                 </p>
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-text-secondary">
                   {testimonial.role} @ {testimonial.company}
                 </p>
               </div>

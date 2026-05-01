@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=EB+Garamond:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=EB+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,9 +11,9 @@
 }
 
 html, body {
-  background-color: #0a0e27;
-  color: #ffffff;
-  font-family: 'IBM Plex Mono', monospace;
+  background-color: #1a1f2e;
+  color: #f0f1f3;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -22,82 +22,152 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Quirky elements */
+/* Premium animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes softGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+  }
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-8px); }
 }
 
-@keyframes glow {
-  0%, 100% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
-  50% { text-shadow: 0 0 20px rgba(255, 0, 0, 1); }
+/* Animation utilities */
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
 }
 
-@keyframes pulse-red {
-  0%, 100% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.3); }
-  50% { box-shadow: 0 0 15px rgba(255, 0, 0, 0.8); }
+.fade-in-down {
+  animation: fadeInDown 0.6s ease-out;
 }
 
-@keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.slide-in-left {
+  animation: slideInLeft 0.6s ease-out;
 }
 
-@keyframes bounce-text {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+.slide-in-right {
+  animation: slideInRight 0.6s ease-out;
 }
 
-.pulse-red {
-  animation: pulse-red 2s ease-in-out infinite;
+.soft-glow {
+  animation: softGlow 3s ease-in-out infinite;
 }
 
-.spin-slow {
-  animation: spin-slow 8s linear infinite;
-}
-
-.bounce-text {
-  animation: bounce-text 1s ease-in-out infinite;
+.shimmer {
+  animation: shimmer 2s ease-in-out infinite;
 }
 
 .float-animation {
   animation: float 3s ease-in-out infinite;
 }
 
-.glow-text {
-  animation: glow 3s ease-in-out infinite;
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
-.minimal-border {
-  border: 1px solid rgba(255, 0, 0, 0.3);
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
 }
 
-.minimal-border-hover {
-  border: 1px solid rgba(255, 0, 0, 0.5);
-  transition: all 0.3s ease;
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
 }
 
-.minimal-border-hover:hover {
-  border-color: rgba(255, 0, 0, 1);
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+h3 {
+  font-size: 1.75rem;
 }
 
+/* Links */
 a {
-  color: #dc2626;
+  color: #d4af37;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 a:hover {
-  color: #b91c1c;
+  color: #e8c547;
 }
 
-/* Quirky mountain divider */
-.mountain-divider {
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(180deg, rgba(220, 38, 38, 0.1) 0%, transparent 100%);
-  clip-path: polygon(0 50%, 10% 40%, 20% 60%, 30% 35%, 40% 50%, 50% 30%, 60% 45%, 70% 35%, 80% 50%, 90% 40%, 100% 55%, 100% 100%, 0 100%);
+/* Premium borders */
+.border-accent {
+  border-color: #d4af37;
+}
+
+.minimal-border {
+  border: 1px solid #3a4556;
+  transition: all 0.3s ease;
+}
+
+.minimal-border:hover {
+  border-color: #d4af37;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+/* Premium divider */
+.elegant-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #3a4556 20%, #3a4556 80%, transparent);
+  margin: 2rem 0;
 }
 
 /* Smooth transitions */

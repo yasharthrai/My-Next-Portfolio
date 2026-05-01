@@ -35,33 +35,33 @@ const Blog = () => {
   ]
 
   return (
-    <section id="blog" className="min-h-screen flex items-center py-20 px-6 border-t border-red-300">
+    <section id="blog" className="min-h-screen flex items-center py-20 px-6 border-t border-border">
       <div className="max-w-5xl mx-auto w-full">
         <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 hover:glow-text cursor-pointer">
-            <span className="text-accent inline-block hover:spin-slow">/</span> blog & insights
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-text-primary cursor-pointer">
+            <span className="text-accent inline-block">/</span> blog & insights
           </h2>
-          <div className="mountain-divider hover:animate-pulse"></div>
+          <div className="elegant-divider"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {articles.map((article, idx) => (
             <article
               key={idx}
-              className="p-6 rounded-lg border border-red-300 hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 group cursor-pointer hover:-translate-y-1"
+              className="p-6 rounded-md border border-border hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 group cursor-pointer hover:bg-primary-light"
             >
               <div className="flex justify-between items-start mb-4">
-                <span className="text-xs bg-red-900 text-accent px-3 py-1 rounded-full">
+                <span className="text-xs bg-primary-light border border-accent text-accent px-3 py-1 rounded-full font-medium">
                   {article.category}
                 </span>
-                <span className="text-xs text-gray-400">{article.date}</span>
+                <span className="text-xs text-text-secondary">{article.date}</span>
               </div>
 
-              <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors line-clamp-2">
+              <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors line-clamp-2 text-text-primary">
                 {article.title}
               </h3>
 
-              <p className="text-gray-300 text-sm mb-4 line-clamp-3">
+              <p className="text-text-secondary text-sm mb-4 line-clamp-3">
                 {article.excerpt}
               </p>
 
@@ -69,15 +69,15 @@ const Blog = () => {
                 {article.tags.map((tag, tagIdx) => (
                   <span
                     key={tagIdx}
-                    className="text-xs text-gray-400 bg-red-950 px-2 py-1 rounded hover:text-accent transition-colors"
+                    className="text-xs text-text-secondary bg-primary-light border border-border px-2 py-1 rounded hover:border-accent hover:text-accent transition-colors font-medium"
                   >
                     #{tag}
                   </span>
                 ))}
               </div>
 
-              <div className="flex justify-between items-center pt-4 border-t border-red-300">
-                <span className="text-xs text-gray-500">{article.readTime}</span>
+              <div className="flex justify-between items-center pt-4 border-t border-border">
+                <span className="text-xs text-text-secondary">{article.readTime}</span>
                 <span className="text-accent group-hover:translate-x-2 transition-transform">→</span>
               </div>
             </article>
@@ -85,8 +85,8 @@ const Blog = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-gray-400 mb-4">More articles coming soon...</p>
-          <a href="#newsletter" className="text-accent hover:text-red-300 transition-colors">
+          <p className="text-text-secondary mb-4">More articles coming soon...</p>
+          <a href="#newsletter" className="text-accent hover:text-accent-light transition-colors font-medium">
             Subscribe to get notified ↓
           </a>
         </div>

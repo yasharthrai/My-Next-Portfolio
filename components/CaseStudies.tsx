@@ -30,40 +30,40 @@ const CaseStudies = () => {
   ]
 
   return (
-    <section id="case-studies" className="py-20 px-6 border-t border-red-300">
+    <section id="case-studies" className="py-20 px-6 border-t border-border">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-          <span className="text-accent inline-block hover:spin-slow">/</span> case studies
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-text-primary">
+          <span className="text-accent inline-block">/</span> case studies
         </h2>
 
         <div className="space-y-8">
           {caseStudies.map((study, idx) => (
             <div
               key={idx}
-              className="p-8 rounded-lg border border-red-300 hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 group"
+              className="p-8 rounded-md border border-border hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 group hover:bg-primary-light"
             >
               <div className="flex justify-between items-start mb-4">
                 <div>
-                  <h3 className="text-2xl font-bold group-hover:text-accent transition-colors">
+                  <h3 className="text-2xl font-bold group-hover:text-accent-light transition-colors text-text-primary">
                     {study.title}
                   </h3>
-                  <p className="text-accent text-sm mt-2">{study.company}</p>
+                  <p className="text-accent text-sm mt-2 font-medium">{study.company}</p>
                 </div>
               </div>
 
-              <p className="text-gray-300 mb-6">{study.description}</p>
+              <p className="text-text-secondary mb-6">{study.description}</p>
 
               <div className="grid grid-cols-3 gap-4 mb-6">
                 {study.metrics.map((metric, metricIdx) => (
                   <div key={metricIdx} className="text-center">
-                    <p className="text-accent font-bold">{metric}</p>
+                    <p className="text-accent-light font-bold">{metric}</p>
                   </div>
                 ))}
               </div>
 
-              <div className="border-t border-red-300 pt-4 mb-4">
-                <p className="text-sm text-gray-400 mb-2">
-                  <span className="font-semibold text-white">Impact:</span> {study.impact}
+              <div className="border-t border-border pt-4 mb-4">
+                <p className="text-sm text-text-secondary mb-2">
+                  <span className="font-semibold text-text-primary">Impact:</span> {study.impact}
                 </p>
               </div>
 
@@ -71,7 +71,7 @@ const CaseStudies = () => {
                 {study.tags.map((tag, tagIdx) => (
                   <span
                     key={tagIdx}
-                    className="px-3 py-1 text-xs bg-red-950 border border-red-300 rounded-full text-gray-300 group-hover:bg-accent group-hover:text-red-950 transition-all"
+                    className="px-3 py-1 text-xs bg-primary-light border border-border rounded-full text-text-secondary group-hover:border-accent group-hover:bg-accent group-hover:text-primary transition-all font-medium"
                   >
                     {tag}
                   </span>
